@@ -2,6 +2,7 @@
 @import "assets/colors";
 @import "assets/css/naria-grid";
 @import "assets/css/naria-common";
+
 @font-face {
   font-family: 'Geograph-Medium';
   src: url('assets/fonts/Geograph/Geograph-Medium.otf') format('opentype');
@@ -20,12 +21,51 @@
 
 body {
   font-family: 'TiemposText-Regular', sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.15;
   text-align: left;
   color: $primary-500;
   letter-spacing: normal;
   font-weight: 400;
+  font-size: 1.125rem;
 }
 
+a {
+  text-decoration: none;
+}
 
+.horizontal-nav {
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+
+      a {
+        font-family: 'geograph-medium', sans-serif;
+        color: $white;
+        font-size: 1rem;
+      }
+
+    }
+
+    li:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $primary-200;
+  color: $white;
+  font-family: 'geograph-medium', sans-serif;
+  border-radius: 32px;
+  letter-spacing: .8px;
+  padding: 19px 34px 21px;
+  border: 0;
+  &:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+}

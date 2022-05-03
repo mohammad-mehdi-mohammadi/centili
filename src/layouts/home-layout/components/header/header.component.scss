@@ -1,0 +1,23 @@
+@import "src/assets/colors";
+
+.header {
+  top: 0;
+  left: 0;
+  padding-top: 2.5rem;
+
+  z-index: 220;
+  transition: .4s;
+  will-change: transform;
+
+  .logo {
+    width: 7.1rem;
+    height: 1.9rem;
+    fill: $white;
+
+    &.scrolled {
+      fill: $primary-500;
+    }
+  }
+
+
+}

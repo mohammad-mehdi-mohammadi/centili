@@ -1,0 +1,51 @@
+@import "src/assets/colors";
+
+.intro {
+  background: url('./../../assets/media/img/background/home-hero-bg.svg') no-repeat top;
+  background-size: cover;
+
+
+  .title {
+    color: $white;
+    padding-top: 14rem;
+    max-width: 40rem;
+
+    h1 {
+      font-size: 5rem;
+      font-family: 'geograph-medium', sans-serif;
+    }
+
+    p {
+      max-width: 25rem;
+      font-size: .875rem;
+      line-height: 1.7;
+
+    }
+  }
+
+  .awardArea {
+    padding: 3rem 3rem 3rem 9.5rem;
+    margin-top: 4.5rem;
+    background-color: $white;
+    display: inline-block;
+
+    p:first-child {
+      opacity: .5;
+      font-size: .75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0 0 1rem;
+      font-family: 'geograph-medium', sans-serif;
+    }
+    .flex {
+
+    }
+  }
+
+  .heroIllustrationImageArea {
+    top: 18rem;
+    right: 12rem;
+  }
+}
