@@ -7,11 +7,11 @@
 
   .title {
     color: $white;
-    padding-top: 14rem;
-    max-width: 40rem;
+    padding-top: 10rem;
+    max-width: 35rem;
 
     h1 {
-      font-size: 5rem;
+      font-size: 4.7rem;
       font-family: 'geograph-medium', sans-serif;
     }
 
@@ -24,7 +24,7 @@
   }
 
   .awardArea {
-    padding: 3rem 3rem 3rem 9.5rem;
+    padding: 3rem 3rem 3rem 14rem;
     margin-top: 4.5rem;
     background-color: $white;
     display: inline-block;
@@ -37,15 +37,23 @@
     p {
       font-size: 1rem;
       margin: 0 0 1rem;
+      line-height: 1.3;
       font-family: 'geograph-medium', sans-serif;
     }
     .flex {
-
+      & > div:first-child {
+        flex: 0 0 79px;
+        margin-right: 1.5rem;
+      }
+      & > div:last-child {
+        max-width: 16rem;
+      }
     }
   }
 
   .heroIllustrationImageArea {
-    top: 18rem;
-    right: 12rem;
+    bottom: -.2rem;
+    right: 6rem;
+    width: 53rem;
   }
 }
