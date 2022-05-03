@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/css/normalize.css";
+@import "assets/colors";
+@import "assets/css/naria-grid";
+@import "assets/css/naria-common";
+@font-face {
+  font-family: 'Geograph-Medium';
+  src: url('assets/fonts/Geograph/Geograph-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'TiemposText-Regular';
+  src: url('assets/fonts/TiemposText/TiemposText-Regular.ttf') format('ttf'),
+  url('assets/fonts/TiemposText/TiemposText-Regular.eot') format('eot'),
+  url('assets/fonts/TiemposText/TiemposText-Regular.woff') format('woff');
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'TiemposText-Regular', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+  color: $primary-500;
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+
