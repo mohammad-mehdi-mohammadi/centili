@@ -1,4 +1,5 @@
 @import "assets/css/normalize.css";
+@import "~swiper/swiper-bundle.min.css";
 @import "assets/colors";
 @import "assets/css/naria-grid";
 @import "assets/css/naria-common";
@@ -73,5 +74,80 @@ a {
   &:hover {
     background-color: red;
     cursor: pointer;
+  }
+}
+
+
+.swiper {
+  max-width: 1400px;
+  overflow: visible;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+  z-index: 1;
+}
+.swiper-wrapper {
+
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-scrollbar {
+  height: .3rem;
+}
+.swiper-primary {
+  overflow-x: hidden;
+  .swiper-scrollbar {
+    background-color: transparent;
+    .swiper-scrollbar-drag {
+      background-color: $secondary-500;
+    }
+  }
+  .swiper-next, .swiper-prev {
+    background-color: transparent;
+    border: 0;
+    line-height: 1;
+    padding: 0;
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    &:not(:disabled):hover {
+      cursor: pointer;
+    }
+  }
+  .swiper-prev {
+    img {
+      transform: rotate(180deg);
+    }
+  }
+  .swiper-next:disabled, .swiper-prev:disabled {
+    opacity: .3;
   }
 }
