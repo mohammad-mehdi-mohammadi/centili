@@ -4,6 +4,7 @@ import {HomeLayoutComponent} from './home-layout.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HomeLayoutRoutingModule} from "./home-layout-routing.module";
+import {SocialNetworkModule} from "../../shared/components/social-network/social-network.module";
 
 @NgModule({
     declarations: [
@@ -11,9 +12,13 @@ import {HomeLayoutRoutingModule} from "./home-layout-routing.module";
         HeaderComponent,
         FooterComponent
     ],
+    exports: [
+        FooterComponent
+    ],
     imports: [
         CommonModule,
-        HomeLayoutRoutingModule
+        HomeLayoutRoutingModule,
+        SocialNetworkModule
     ]
 })
 export class HomeLayoutModule {
