@@ -94,9 +94,6 @@ a {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,5 +146,10 @@ a {
   }
   .swiper-next:disabled, .swiper-prev:disabled {
     opacity: .3;
+  }
+}
+.swiper-white-rail {
+  .swiper-scrollbar {
+    background-color: $white;
   }
 }
