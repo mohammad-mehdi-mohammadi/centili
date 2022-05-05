@@ -1,0 +1,32 @@
+<section class="featuredLogosArea py-16">
+    <section class="container m-auto relative mb-16">
+        <img src="./assets/media/icons/text-lines.svg" class="textLines absolute -ml-3 -mt-1.5"/>
+        <h3 class="m-0">
+            They’re already winning with us
+        </h3>
+    </section>
+    <div class="swiper-primary">
+        <swiper #swiper [config]="config">
+
+            <ng-template swiperSlide *ngFor="let slide of slides">
+                <div class="w-auto">
+                    <div class="mb-4" *ngFor="let item of slide.item">
+                        <img [src]="item.url" [alt]="item.alt"
+                             class="logo" width="180" height="104">
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+        <div class="container m-auto mt-5">
+            <div class="row items-center">
+                <div class="col-22">
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="col-2 swiperActionArea text-right">
+                    <button (click)="slidePrev()" class="swiper-prev mr-3"><img src="./assets/media/icons/arrow-right-blue.svg" alt="prev"/></button>
+                    <button (click)="slideNext()" class="swiper-next ml-3"><img src="./assets/media/icons/arrow-right-blue.svg" alt="next"/></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+<section class="growthArea pt-28">
+    <div class="row container m-auto">
+        <div class="col-24 col-md-11">
+            <div class=" mr-6">
+                <section>
+                    <h1 class="title mr-8">We are your partner in growth</h1>
+                    <p class="summary mt-9 mb-4">
+                        Why do teams choose Centili?
+                    </p>
+                    <div class="description italic-font inline">
+                        {{description}}
+                    </div><span *ngIf="isDisplayMore">...</span>
+                    <div class="mt-4">
+                        <a href="javascript:;" class="showMore" (click)="onDescriptionChange()">Show less</a>
+                    </div>
+                </section>
+
+                <section class="mt-8">
+                    <!--                    app-->
+                    <p class="name mb-2">Torkel Muri</p>
+                    <p class="rank mt-0 mb-6">
+                        Sales Director at Telenor Digital
+                    </p>
+                    <img src="./assets/media/img/operators-telenor.svg" loading="lazy"/>
+                </section>
+            </div>
+
+        </div>
+        <div class="col-24 col-md-13 text-right">
+            <img src="./assets/media/img/home-we-are-your.svg" loading="lazy" class="background"/>
+        </div>
+    </div>
+</section>

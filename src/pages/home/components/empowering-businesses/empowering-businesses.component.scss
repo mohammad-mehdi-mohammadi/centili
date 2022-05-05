@@ -1,0 +1,420 @@
+@import "src/assets/colors";
+
+.empoweringBusiness {
+  .title {
+    font-size: 3.5rem;
+    line-height: 1.15;
+    letter-spacing: -.64px;
+    font-weight: 300;
+    font-family: 'geograph-medium', sans-serif;
+  }
+
+  .summary {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 22rem;
+    margin: 3rem 0 5rem;
+  }
+
+
+  .five-stats {
+    position: relative;
+    min-height: 400px;
+    height: 120vw;
+    .box-0, .box-1, .box-2, .box-3, .box-4 {
+      position: absolute;
+      text-align: center;
+    }
+
+    .box-0 {
+      left: 17vw;
+      top: 0;
+    }
+
+    .box-1 {
+      left: 20vw;
+      top: 55vw;
+    }
+
+    .box-2 {
+      left: 63vw;
+      top: 42vw;
+    }
+
+    .box-3 {
+      left: 2vw;
+      top: 37vw;
+    }
+
+    .box-4 {
+      left: 63vw;
+      top: 8vw;
+    }
+
+    h6 {
+      font-family: 'geograph-medium', sans-serif;
+      font-weight: 300;
+      font-size: .875rem;
+      line-height: 1.71;
+      letter-spacing: 0;
+      margin: 1rem 0 0;
+    }
+
+    p {
+      font-family: 'geograph-medium', sans-serif;
+
+    }
+
+    .box-0 {
+      .circle {
+        width: 41.875vw;
+        height: 41.875vw;
+        background-color: $secondary-500;
+        font-size: 2.5rem;
+      }
+    }
+
+    .box-1 {
+      .circle {
+        width: 38.4375vw;
+        height: 38.4375vw;
+        max-width: 123px;
+        max-height: 123px;
+        background-color: #ffb180;
+        font-size: 2rem;
+      }
+    }
+
+    .box-2 {
+      .circle {
+        width: 30vw;
+        height: 30vw;
+        background-color: #ff8b40;
+        font-size: 1.275rem;
+      }
+    }
+
+    .box-3 {
+      .circle {
+        width: 24vw;
+        height: 24vw;
+        font-size: 1.275rem;
+        background-color: #cfddf1;
+      }
+    }
+
+    .box-4 {
+      .circle {
+        width: 21vw;
+        height: 21vw;
+        font-size: 1.125rem;
+        background-color: #cfddf1;
+      }
+    }
+
+    .circle {
+      border-radius: 100%;
+    }
+  }
+
+}
+
+
+@media (min-width: 576px) {
+  .empoweringBusiness {
+    .five-stats {
+      .box-1 {
+        left: 33%;
+        top: 44%;
+      }
+
+      .box-2 {
+        left: 60%;
+        top: 40%;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+  .empoweringBusiness {
+    .five-stats {
+      min-height: 730px;
+      height: auto;
+      .box-0 {
+        left: 15%;
+        top: 0;
+      }
+
+      .box-2 {
+        left: 72%;
+        top: 38%;
+      }
+
+      .box-4 {
+        left: 60%;
+        top: 15%;
+      }
+
+      .box-3 {
+        left: 4%;
+        top: 39%;
+      }
+
+      .box-0 {
+        .circle {
+          font-size: 3.45rem;
+          width: 37.76042vw;
+          height: 37.76042vw;
+          max-width: 290px;
+          max-height: 290px;
+        }
+      }
+
+      .box-1 {
+        .circle {
+          font-size: 4rem;
+          width: 32.55208vw;
+          height: 32.55208vw;
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+
+      .box-2 {
+        .circle {
+          font-size: 3.25rem;
+          width: 26.04167vw;
+          height: 26.04167vw;
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+
+      .box-3 {
+        .circle {
+          width: 19.53125vw;
+          height: 19.53125vw;
+          max-width: 150px;
+          max-height: 150px;
+          font-size: 3.45rem;
+        }
+      }
+
+      .box-4 {
+        .circle {
+          width: 16.92708vw;
+          height: 16.92708vw;
+          max-width: 180px;
+          max-height: 180px;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .empoweringBusiness {
+    .five-stats {
+      .box-4 {
+        left: 57%;
+        top: 9%;
+      }
+
+      .box-3 {
+        left: 2%;
+        top: 40%;
+      }
+
+      .box-2 {
+        left: 79%;
+        top: 38%;
+      }
+
+      .box-0 {
+        .circle {
+          font-size: 5rem;
+          width: 20.83333vw;
+          height: 20.83333vw;
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+
+      .box-1 {
+        .circle {
+          width: 20.83333vw;
+          height: 20.83333vw;
+          max-width: 250px;
+          max-height: 250px;
+        }
+      }
+
+      .box-2 {
+        .circle {
+          font-size: 4rem;
+          width: 16.66667vw;
+          height: 16.66667vw;
+          max-width: 200px;
+          max-height: 200px;
+        }
+      }
+
+      .box-3 {
+        .circle {
+          width: 11.66667vw;
+          height: 11.66667vw;
+          max-width: 140px;
+          max-height: 140px;
+        }
+      }
+
+      .box-4 {
+        .circle {
+          font-size: 3.45rem;
+          width: 15vw;
+          height: 15vw;
+          max-width: 180px;
+          max-height: 180px;
+        }
+      }
+
+    }
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .empoweringBusiness {
+    .five-stats {
+      .box-0 {
+        .circle {
+          width: 23.85714vw;
+          height: 23.85714vw;
+          max-width: 334px;
+          max-height: 334px;
+        }
+      }
+
+      .box-1 {
+        .circle {
+          font-size: 6rem;
+          width: 27.42857vw;
+          height: 27.42857vw;
+          max-width: 384px;
+          max-height: 384px;
+        }
+      }
+
+      .box-2 {
+        .circle {
+          width: 18.57143vw;
+          height: 18.57143vw;
+          max-width: 260px;
+          max-height: 260px;
+        }
+      }
+
+      .box-3 {
+        .circle {
+          width: 14.57143vw;
+          height: 14.57143vw;
+          max-width: 204px;
+          max-height: 204px;
+        }
+      }
+
+      .box-4 {
+        .circle {
+          font-size: 3rem;
+          width: 12.85714vw;
+          height: 12.85714vw;
+          max-width: 180px;
+          max-height: 180px;
+        }
+      }
+    }
+  }
+
+}
+@media (min-width: 1600px) {
+  .empoweringBusiness {
+    .five-stats {
+      .box-0 {
+        left: 15%;
+        top: -10%;
+      }
+
+      .box-1 {
+        left: 27%;
+        top: 49%;
+      }
+
+      .box-3 {
+        left: 2%;
+        top: 40%;
+      }
+
+      .box-4 {
+        left: 58%;
+        top: 19%;
+      }
+
+      .box-0 {
+        .circle {
+          width: 20.875vw;
+          height: 20.875vw;
+          max-width: 334px;
+          max-height: 334px;
+        }
+      }
+
+      .box-1 {
+        .circle {
+          width: 24vw;
+          height: 24vw;
+          max-width: 384px;
+          max-height: 384px;
+        }
+      }
+
+      .box-2 {
+        .circle {
+          width: 16.25vw;
+          height: 16.25vw;
+          max-width: 260px;
+          max-height: 260px;
+        }
+      }
+
+      .box-3 {
+        .circle {
+          width: 12.75vw;
+          height: 12.75vw;
+          max-width: 204px;
+          max-height: 204px;
+        }
+      }
+
+      .box-4 {
+        .circle {
+          font-size: 3rem;
+          width: 11.25vw;
+          height: 11.25vw;
+          max-width: 180px;
+          max-height: 180px;
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+

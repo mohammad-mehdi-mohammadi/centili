@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>F217019D-CE29-4F91-A2E3-DC7B2EB648FC</title>
+    <g id="screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-1-1-home" transform="translate(-611.000000, -1500.000000)">
+            <g id="award-winning" transform="translate(611.000000, 1500.000000)">
+                <rect id="bg" x="0" y="0" width="256" height="256"></rect>
+                <path d="M128.000125,238 C67.2486408,238 18,188.751497 18,127.999875 C18,67.2485028 67.2486408,18 128.000125,18 C188.751109,18 238,67.2485028 238,127.999875 C238,188.751497 188.751109,238 128.000125,238 Z" id="elipse" fill="#FFE4D2"></path>
+                <path d="M211,127.499876 C211,173.063547 174.063492,210 128.5,210 C82.9365082,210 46,173.063547 46,127.499876 C46,81.9364526 82.9365082,45 128.5,45 C174.063492,45 211,81.9364526 211,127.499876" id="Fill-1546" fill="#3B7CFF"></path>
+                <path d="M188,127.499875 C188,160.36074 161.36099,187 128.499875,187 C95.6390101,187 69,160.36074 69,127.499875 C69,94.6392599 95.6390101,68 128.499875,68 C161.36099,68 188,94.6392599 188,127.499875" id="Fill-1548" fill="#FFFFFF"></path>
+                <path d="M164,127.999876 C164,147.329871 148.329926,163 129,163 C109.669826,163 94,147.329871 94,127.999876 C94,108.670129 109.669826,93 129,93 C148.329926,93 164,108.670129 164,127.999876" id="Fill-1550" fill="#0633EF"></path>
+                <path d="M144,127.999874 C144,136.284016 137.284465,143 129,143 C120.715788,143 114,136.284016 114,127.999874 C114,119.715984 120.715788,113 129,113 C137.284465,113 144,119.715984 144,127.999874" id="Fill-1552" fill="#FF6700"></path>
+                <polyline id="Stroke-1554" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="250.829457 134.375 245 128.5 250.829457 122.625"></polyline>
+                <polyline id="Stroke-1556" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="242.329457 134.375 236.5 128.5 242.329457 122.625"></polyline>
+                <polyline id="Stroke-1558" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="233.829457 134.375 228 128.5 233.829457 122.625"></polyline>
+                <line x1="254" y1="128.5" x2="128.5" y2="128.5" id="Stroke-1560" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round"></line>
+                <polyline id="Stroke-1562" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="239.977786 179.85195 236.750251 172.20645 244.336236 168.9537"></polyline>
+                <polyline id="Stroke-1564" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="231.91334 176.576075 228.685557 168.930825 236.271541 165.677825"></polyline>
+                <polyline id="Stroke-1566" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round" points="223.84867 173.3002 220.621135 165.65495 228.207119 162.40195"></polyline>
+                <line x1="247.218567" y1="176.4589" x2="128.5" y2="128.5" id="Stroke-1568" stroke="#0C266D" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

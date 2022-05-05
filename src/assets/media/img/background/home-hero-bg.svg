@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1200" viewBox="0 0 1920 1200">
+  <defs>
+    <rect id="home-hero-bg-a" width="1920" height="1200" x="0" y="0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="home-hero-bg-b" fill="#fff">
+      <use xlink:href="#home-hero-bg-a"/>
+    </mask>
+    <rect width="1918.667" height="1198.667" x=".667" y=".667" stroke="#979797" stroke-width="1.333"/>
+    <polygon fill="#F60" points="0 1200 1228 1200 1228 0 0 0" mask="url(#home-hero-bg-b)"/>
+    <path fill="#25316A" d="M0,572 C380.668337,557.544176 720.553742,408.129379 784,-16 L0,-16 L0,572 Z" mask="url(#home-hero-bg-b)"/>
+    <rect width="692" height="1200" x="1228" fill="#3B7CFF" mask="url(#home-hero-bg-b)"/>
+  </g>
+</svg>
