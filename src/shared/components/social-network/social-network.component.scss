@@ -1,0 +1,15 @@
+.socialNetworkArea {
+  display: flex;
+  justify-content: space-between;
+  a {
+    width: 3rem;
+  }
+  a:not(:last-child) {
+    margin-right: .5rem;
+  }
+}
+@media (min-width: 768px) {
+  .socialNetworkArea {
+    justify-content: flex-start;
+  }
+}

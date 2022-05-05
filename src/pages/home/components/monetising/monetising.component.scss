@@ -1,0 +1,82 @@
+@import "src/assets/colors";
+
+.monetisingArea {
+  margin-top: 8rem;
+
+  .title, .summary, .list {
+    padding-left: 6rem;
+  }
+
+  .title {
+
+    letter-spacing: -.64px;
+    font-size: 6rem;
+    line-height: 1.04;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-family: 'geograph-medium', sans-serif;
+    max-width: 50rem;
+  }
+
+  .summary {
+    line-height: 1.4;
+    font-size: 1.125rem;
+    font-family: 'TiemposText-Regular', sans-serif;
+    letter-spacing: -.4px;
+    max-width: 32rem;
+    margin-top: 4rem;
+  }
+
+  .list {
+    margin-top: 5rem;
+    a {
+
+      color: $primary-500;
+      display: block;
+      transition: all 0.3s;
+      background-color: $white;
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      h3, p {
+        margin: 0;
+        font-family: 'geograph-medium', sans-serif;
+        font-weight: 300;
+      }
+      p {
+        margin-top: 9rem;
+        font-size: .75rem;
+        svg {
+          width: 1.3rem;
+          color: $secondary-500;
+          vertical-align: middle;
+        }
+      }
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 32px 0 rgba(6,51,239,.1);
+      }
+    }
+  }
+
+  .background {
+    position: absolute;
+    bottom: 2.9rem;
+    width: 28vw;
+    right: 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .monetisingArea .background {
+    width: 20vw;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .monetisingArea .background {
+    width: 28vw;
+  }
+}

@@ -1,0 +1,63 @@
+@import "src/assets/colors";
+
+.footerArea {
+  background-color: $primary-500;
+  color: $white;
+  padding: 17rem 0 8rem 0;
+  font-family: 'geograph-medium', sans-serif;
+
+  a {
+    color: $white;
+  }
+
+  h3, a, h5, p {
+    font-weight: 300;
+  }
+
+  .links {
+    h5 {
+      font-size: .75rem;
+      margin-bottom: 2.2rem;
+      opacity: .5;
+      text-transform: uppercase;
+    }
+
+    nav {
+      a {
+        display: block;
+        font-size: .875rem;
+
+      }
+
+      a:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+    }
+    .headless {
+      margin-top: 4.5rem;
+    }
+    .moreCome {
+      opacity: 0.3;
+      font-size: .875rem;
+      margin-top: .8rem;
+      display: inline-block;
+    }
+  }
+
+  .topic {
+    h3 {
+      line-height: 1.1;
+      letter-spacing: 0;
+
+      font-size: 32px;
+      margin-bottom: 2.5rem;
+    }
+
+    p {
+
+      font-size: .875rem;
+      margin: 7rem 0 0 0;
+    }
+  }
+}

@@ -9,6 +9,10 @@ import {SocialNetworkModule} from "../../shared/components/social-network/social
 import { GrowthPartnerComponent } from './components/growth-partner/growth-partner.component';
 import { ImpactIndustriesComponent } from './components/impact-industries/impact-industries.component';
 import { EmpoweringBusinessesComponent } from './components/empowering-businesses/empowering-businesses.component';
+import {LatestStoriesComponent} from "./components/latest-stories/latest-stories.component";
+import { MonetisingComponent } from './components/monetising/monetising.component';
+import { ExpandingGlobalNetworkComponent } from './components/expanding-global-network/expanding-global-network.component';
+import { NewslettersComponent } from './components/newsletters/newsletters.component';
 
 
 @NgModule({
@@ -17,7 +21,11 @@ import { EmpoweringBusinessesComponent } from './components/empowering-businesse
         FeaturedLogosComponent,
         GrowthPartnerComponent,
         ImpactIndustriesComponent,
-        EmpoweringBusinessesComponent
+        EmpoweringBusinessesComponent,
+        LatestStoriesComponent,
+        MonetisingComponent,
+        ExpandingGlobalNetworkComponent,
+        NewslettersComponent
     ],
     imports: [
         CommonModule,

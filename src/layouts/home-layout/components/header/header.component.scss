@@ -3,11 +3,10 @@
 .header {
   top: 0;
   left: 0;
-  padding-top: 2rem;
-
-  z-index: 220;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 99;
   transition: .4s;
-  will-change: transform;
 
   .logo {
     width: 7.1rem;
@@ -19,5 +18,20 @@
     }
   }
 
+  &.active {
+    background-color: $white;
+    color: $primary-500;
+    .logo {
+      fill: $primary-500;
+
+    }
+    a {
+      color: $primary-500;
+    }
+  }
+
+  &.hide {
+    transform: translateY(-5rem);
+  }
 
 }
