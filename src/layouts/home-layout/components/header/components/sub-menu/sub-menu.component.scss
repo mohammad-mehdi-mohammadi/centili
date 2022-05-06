@@ -1,0 +1,114 @@
+@import "src/assets/colors";
+
+.subMenuArea {
+  .overlay {
+    background-color: rgba($black, 0.03);
+    height: 110vh;
+    z-index: 8;
+    top: 6rem;
+  }
+
+  .nav {
+    border-radius: 12px;
+    min-height: 22rem;
+    top: 7rem;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: translateY(1rem);
+    z-index: 0;
+
+    & > div > div {
+      padding: 4rem 4rem;
+    }
+
+    &.active {
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .borderLeft {
+      border-left: 1px solid rgba($primary-500, .16);
+    }
+
+    background-color: $white;
+    max-width: 65rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
+
+    .title {
+      opacity: 0.5;
+      font-size: .75rem;
+    }
+
+    a {
+      color: $primary-500;
+      font-family: 'geograph-medium', sans-serif;
+      font-weight: 300;
+      display: block;
+      font-size: .875rem;
+
+    }
+
+    a:not(:last-child, .exploreAll, .mb-8) {
+      margin-bottom: 14px;
+    }
+
+    .newLabel {
+      position: relative;
+
+      &::before {
+        content: 'New';
+        position: absolute;
+        left: -2.5rem;
+        font-size: .75rem;
+        font-weight: 300;
+        color: $secondary-500;
+      }
+    }
+
+    .arrowIcon {
+      width: 1.5rem;
+      vertical-align: middle;
+      color: $secondary-500;
+      margin-top: -.1rem;
+
+    }
+
+    &.responsive {
+      margin: 0 3rem;
+      max-height: 26rem;
+      overflow: auto;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .subMenuArea {
+    .overlay {
+      top: 5.4rem;
+    }
+
+    .nav {
+      top: 7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .subMenuArea {
+    .nav {
+      &.responsive {
+        margin: 0 1.5rem
+      }
+    }
+  }
+
+
+}

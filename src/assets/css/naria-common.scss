@@ -68,7 +68,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.text-uppercase {
+  text-transform: uppercase;
+}
 .m-auto {
   margin: auto;
 }
@@ -3383,13 +3385,13 @@
 }
 
 .container {
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 @media (min-width: 576px) {
 
   .container {
-    max-width: 576px;
+    max-width: 536px;
   }
 }
 
@@ -3403,7 +3405,7 @@
 @media (min-width: 992px) {
 
   .container {
-    max-width: 992px;
+    max-width: 940px;
   }
 }
 
@@ -3411,7 +3413,7 @@
 
 
   .container {
-    max-width: 1200px;
+    max-width: 1150px;
   }
 }
 

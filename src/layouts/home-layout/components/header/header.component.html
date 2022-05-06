@@ -1,6 +1,7 @@
-<header class="header w-100" [ngClass]="{'active': direction === getScrollDirection.UP, 'hide': direction === getScrollDirection.DOWN}">
+<header class="header w-100"
+        [ngClass]="{'active': direction === getScrollDirection.UP, 'hide': direction === getScrollDirection.DOWN}">
     <section class="row container m-auto items-center">
-        <div class="col-24 col-sm-6 col-md-5">
+        <div class="col-20 col-lg-5">
             <a href="#" class="inline-block logo">
                 <svg data-v-55142c39="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 28">
                     <path data-v-55142c39=""
@@ -8,14 +9,38 @@
                 </svg>
             </a>
         </div>
-        <div class="col-24 col-sm-13 col-md-13">
+        <div class="col-0 col-lg-13">
             <nav class="horizontal-nav">
                 <ul>
                     <li>
-                        <a href='javascript:;'>Products</a>
+                        <a href='javascript:;' (click)="displaySubMenu(getNavEnum.PRODUCTION)">Products
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrowIcon"
+                                 [ngClass]="{'active' : navName === getNavEnum.PRODUCTION}" viewBox="0 0 24 24">
+                                <g fill="currentColor" fill-rule="evenodd">
+                                    <g fill="currentColor" fill-rule="nonzero">
+                                        <g>
+                                            <path d="M9.293 7.293c.36-.36.928-.388 1.32-.083l.094.083 4 4c.36.36.388.928.083 1.32l-.083.094-4 4c-.39.39-1.024.39-1.414 0-.36-.36-.388-.928-.083-1.32l.083-.094L12.585 12 9.293 8.707c-.36-.36-.388-.928-.083-1.32l.083-.094z"
+                                                  transform="translate(-324 -3057) translate(324 3057)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <a href='javascript:;'>Company</a>
+                        <a href='javascript:;' (click)="displaySubMenu(getNavEnum.COMPANY)">Company
+                            <svg xmlns="http://www.w3.org/2000/svg" class="arrowIcon"
+                                 [ngClass]="{'active' : navName === getNavEnum.COMPANY}" viewBox="0 0 24 24">
+                                <g fill="currentColor" fill-rule="evenodd">
+                                    <g fill="currentColor" fill-rule="nonzero">
+                                        <g>
+                                            <path d="M9.293 7.293c.36-.36.928-.388 1.32-.083l.094.083 4 4c.36.36.388.928.083 1.32l-.083.094-4 4c-.39.39-1.024.39-1.414 0-.36-.36-.388-.928-.083-1.32l.083-.094L12.585 12 9.293 8.707c-.36-.36-.388-.928-.083-1.32l.083-.094z"
+                                                  transform="translate(-324 -3057) translate(324 3057)"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
                     </li>
                     <li>
                         <a href='javascript:;'>Documentation</a>
@@ -26,7 +51,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="col-24 col-sm-7 col-md-6">
+        <div class="col-4 col-lg-6 text-right">
             <nav class="horizontal-nav">
                 <ul>
                     <li>
@@ -40,6 +65,16 @@
                     </li>
                 </ul>
             </nav>
+            <div class="hamburger">
+                <a href="javascript:;" (click)="displayNavHandler()" [ngClass]="{'active' : responsiveNavFlag}">
+                    <div class="hamburgerBox">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                    </div>
+
+                </a>
+            </div>
         </div>
     </section>
+    <app-sub-menu [navName]="navName" (hideSubMenu)="onHideSubMenuChange($event)"></app-sub-menu>
 </header>

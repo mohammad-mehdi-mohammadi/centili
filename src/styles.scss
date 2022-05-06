@@ -165,3 +165,21 @@ a {
   padding: 1rem;
   font-family: 'geograph-medium', sans-serif
 }
+
+
+@media screen and (max-width: 1366px){
+  .horizontal-nav {
+    ul {
+      li {
+        a {
+          font-size: .75rem;
+        }
+
+      }
+
+      li:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
