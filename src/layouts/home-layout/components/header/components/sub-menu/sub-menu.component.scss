@@ -11,12 +11,19 @@
   .nav {
     border-radius: 12px;
     min-height: 22rem;
+    max-height: 30rem;
     top: 7rem;
     visibility: hidden;
     transition: all 0.3s;
     opacity: 0;
     transform: translateY(1rem);
     z-index: 0;
+    background-color: $white;
+    max-width: 65rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
 
     & > div > div {
       padding: 4rem 4rem;
@@ -32,13 +39,6 @@
     .borderLeft {
       border-left: 1px solid rgba($primary-500, .16);
     }
-
-    background-color: $white;
-    max-width: 65rem;
-    margin: auto;
-    left: 0;
-    right: 0;
-    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
 
     .title {
       opacity: 0.5;
@@ -79,10 +79,160 @@
 
     }
 
-    &.responsive {
-      margin: 0 3rem;
-      max-height: 26rem;
+
+  }
+
+  .childrenStyles {
+    .title {
+      opacity: 0.5;
+      font-size: .75rem;
+    }
+
+    a {
+      color: $primary-500;
+      font-family: 'geograph-medium', sans-serif;
+      font-weight: 300;
+      display: block;
+      font-size: .875rem;
+
+    }
+
+    a:not(:last-child, .exploreAll, .mb-8) {
+      margin-bottom: 14px;
+    }
+
+    .newLabel {
+      position: relative;
+
+      &::before {
+        content: 'New';
+        position: absolute;
+        left: -2.5rem;
+        font-size: .75rem;
+        font-weight: 300;
+        color: $secondary-500;
+      }
+    }
+
+    .arrowIcon {
+      width: 1.5rem;
+      vertical-align: middle;
+      color: $secondary-500;
+      margin-top: -.1rem;
+
+    }
+
+    &.active {
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .head {
+      padding: 1.5rem;
+
+      h3 {
+        margin: 0;
+        font-size: .75rem;
+        font-family: 'geograph-medium', sans-serif;
+        font-weight: 300;
+      }
+
+      .arrow {
+        width: 1.5rem;
+        transform: rotate(180deg);
+
+      }
+    }
+
+    .body {
+      padding: 0 1.5rem 3rem;
+
+      a {
+        font-size: .75rem;
+      }
+
+      .newLabel {
+        &::before {
+          top: -1rem;
+          left: 0;
+        }
+
+      }
+    }
+  }
+
+  .allResponsiveArea {
+    margin: 0 3rem;
+    top: 7rem;
+    visibility: hidden;
+
+    opacity: 0;
+
+    z-index: 0;
+    left: 0;
+    right: 0;
+
+    &.active {
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;
+
+    }
+
+
+    .responsiveMainMenu {
+      width: 100%;
+      transition: all 0.3s;
+
+      padding: 2rem;
+      min-height: 18rem;
       overflow: auto;
+      max-width: 65rem;
+      border-radius: 12px;
+      box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
+
+      &.hide {
+        transform: translateX(-28rem);
+      }
+
+      a {
+        display: block;
+        font-size: .65rem;
+        opacity: .5;
+        font-weight: 300;
+
+        .arrowIcon {
+          float: right;
+        }
+      }
+
+    }
+
+    .responsiveCompany, .responsiveMainMenu, .responsiveProducts {
+      background-color: $white;
+      overflow: auto;
+      border-radius: 12px;
+      box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
+    }
+  }
+
+  .responsiveCompany, .responsiveProducts {
+    border-radius: 12px;
+    min-height: 22rem;
+    max-height: 30rem;
+    overflow: auto;
+    transition: all 0.3s;
+    background-color: $white;
+    max-width: 65rem;
+    left: 0;
+    right: 0;
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, .1);
+    transform: translateX(28rem);
+
+    &.active {
+      transform: translateX(0);
     }
   }
 
