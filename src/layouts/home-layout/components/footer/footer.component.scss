@@ -50,7 +50,7 @@
       line-height: 1.1;
       letter-spacing: 0;
 
-      font-size: 32px;
+      font-size: 2rem;
       margin-bottom: 2.5rem;
     }
 
@@ -58,6 +58,20 @@
 
       font-size: .875rem;
       margin: 7rem 0 0 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footerArea {
+    padding: 14rem 0 4rem 0;
+    .topic {
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 4rem;
+      }
+      p {
+        margin: 2rem 0 0 0;
+      }
     }
   }
 }

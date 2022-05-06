@@ -96,3 +96,31 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .newsletterArea {
+    margin-top: -2rem;
+    padding-top: 3rem;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .area {
+      .title {
+        font-size: 1.75rem;
+      }
+      .summary {
+        font-size: .75rem;
+      }
+    }
+    .background {
+      position: absolute;
+      width: 200%;
+      height: auto;
+      bottom: -2rem;
+      top: auto;
+      left: -10%;
+      z-index: 1;
+    }
+  }
+}

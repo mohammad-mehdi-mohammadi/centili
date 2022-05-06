@@ -32,12 +32,12 @@
     }
 
     .box-1 {
-      left: 20vw;
-      top: 55vw;
+      left: 24vw;
+      top: 57vw;
     }
 
     .box-2 {
-      left: 63vw;
+      left: 53vw;
       top: 42vw;
     }
 
@@ -418,3 +418,17 @@
 }
 
 
+@media (max-width: 768px) {
+  .empoweringBusiness {
+    margin-top: 0;
+    .title {
+      font-size: 1.2rem;
+    }
+    .summary {
+      margin: 0 0 1rem;
+    }
+    .five-stats {
+      margin-top: 2rem;
+    }
+  }
+}

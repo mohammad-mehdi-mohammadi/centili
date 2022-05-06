@@ -1,0 +1,110 @@
+@import "src/assets/colors";
+
+.intro {
+  background: url('./../../../../assets/media/img/background/home-hero-bg.svg') no-repeat top;
+  background-size: cover;
+
+
+  .title {
+    color: $white;
+    padding-top: 10rem;
+    max-width: 35rem;
+
+    h1 {
+      font-size: 5rem;
+      line-height: 1.1;
+
+      font-family: 'geograph-medium', sans-serif;
+    }
+
+    p {
+      max-width: 25rem;
+      font-size: .875rem;
+      line-height: 1.7;
+
+    }
+  }
+
+  .awardArea {
+
+    padding: 3rem 3rem 3rem 14rem;
+    margin-top: 4.5rem;
+    background-color: $white;
+    display: inline-block;
+
+    p:first-child {
+      opacity: .5;
+      font-size: .75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0 0 1rem;
+      line-height: 1.3;
+      font-family: 'geograph-medium', sans-serif;
+    }
+
+    .flex {
+      & > div:first-child {
+        flex: 0 0 79px;
+        margin-right: 1.5rem;
+      }
+
+      & > div:last-child {
+        max-width: 16rem;
+      }
+    }
+  }
+
+  .heroIllustrationImageArea {
+    bottom: -.2rem;
+    right: 6rem;
+    width: 58%;
+  }
+}
+@media (max-width: 1600px) {
+  .intro {
+
+    .awardArea {
+      padding: 3rem 4rem 5rem 4rem;
+
+    }
+  }
+
+}
+@media (max-width: 1340px) {
+  .intro {
+
+    .awardArea {
+      padding: 2rem 2rem 3rem 2rem;
+
+    }
+    .heroIllustrationImageArea {
+      right: 0;
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .intro {
+    .title {
+      h1 {
+        font-size: 2rem;
+        line-height: 1.25;
+      }
+    }
+    .awardArea {
+      padding: 3rem 4rem 5rem 4rem;
+      width: 100%;
+
+    }
+    .heroIllustrationImageArea {
+      background-color: $primary-150;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+}

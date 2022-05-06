@@ -13,6 +13,8 @@ import {LatestStoriesComponent} from "./components/latest-stories/latest-stories
 import { MonetisingComponent } from './components/monetising/monetising.component';
 import { ExpandingGlobalNetworkComponent } from './components/expanding-global-network/expanding-global-network.component';
 import { NewslettersComponent } from './components/newsletters/newsletters.component';
+import { FeaturedBoxesComponent } from './components/featured-boxes/featured-boxes.component';
+import { IntroComponent } from './components/intro/intro.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { NewslettersComponent } from './components/newsletters/newsletters.compo
         LatestStoriesComponent,
         MonetisingComponent,
         ExpandingGlobalNetworkComponent,
-        NewslettersComponent
+        NewslettersComponent,
+        FeaturedBoxesComponent,
+        IntroComponent
     ],
     imports: [
         CommonModule,

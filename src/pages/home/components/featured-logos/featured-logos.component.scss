@@ -15,3 +15,19 @@
 
   }
 }
+@media (max-width: 768px) {
+  .featuredLogosArea {
+    padding: 2rem 0 0;
+    h3 {
+      font-size: .85rem;
+    }
+    .container {
+      margin-bottom: 2rem;
+      img {
+        margin-top: -.4rem;
+        margin-left: -.6rem;
+      }
+    }
+  }
+
+}

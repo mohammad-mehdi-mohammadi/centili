@@ -28,3 +28,37 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .expandingGlobalNetworkArea {
+    margin-top: 2rem;
+    padding: 2rem 0;
+    .area {
+      margin-left: 0;
+      .topic {
+        max-width: 30rem;
+        h1 {
+
+          font-size: 1.5rem;
+          line-height: 1.28;
+          letter-spacing: -.64px;
+          margin-top: 2rem;
+        }
+        p {
+          max-width: 25rem;
+
+          font-size: .75rem;
+
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+}
