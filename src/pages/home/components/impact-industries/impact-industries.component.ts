@@ -1,15 +1,15 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import SwiperCore, {Navigation, Scrollbar, SwiperOptions} from 'swiper';
+import SwiperCore, {Autoplay, Navigation, Scrollbar, SwiperOptions} from 'swiper';
 import {SwiperComponent} from "swiper/angular";
 // install Swiper modules
-SwiperCore.use([Scrollbar, Navigation]);
+SwiperCore.use([Scrollbar, Navigation, Autoplay]);
 @Component({
   selector: 'app-impact-industries',
   templateUrl: './impact-industries.component.html',
   styleUrls: ['./impact-industries.component.scss']
 })
 export class ImpactIndustriesComponent implements OnInit {
-  @ViewChild('swiper', {static: false}) swiper?: SwiperComponent;
+  @ViewChild('swiper', {static: false}) swiper!: SwiperComponent;
   config: SwiperOptions = {
     grabCursor: true,
     speed: 800,
@@ -17,6 +17,10 @@ export class ImpactIndustriesComponent implements OnInit {
     navigation: {
       nextEl: '.impactIndustriesArea .swiper-next',
       prevEl: '.impactIndustriesArea .swiper-prev'
+    },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
     },
     breakpoints: {
       '320': {
@@ -41,7 +45,10 @@ export class ImpactIndustriesComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  ngAfterViewInit(): void
+  {
+    this.swiper.swiperRef.autoplay.start();
+  }
   slideNext() {
     if (this.swiper) {
       this.swiper.swiperRef.slideNext();
@@ -53,6 +60,5 @@ export class ImpactIndustriesComponent implements OnInit {
     if (this.swiper) {
       this.swiper.swiperRef.slidePrev();
     }
-
   }
 }
